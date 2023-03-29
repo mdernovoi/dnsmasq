@@ -12,5 +12,5 @@ EXPOSE 53/udp
 
 HEALTHCHECK --interval=60s --timeout=10s CMD /healthcheck.sh
 
-ENTRYPOINT ["/bin/dnsmasq"]
+ENTRYPOINT ["dnsmasq"]
 CMD ["--keep-in-foreground"]
